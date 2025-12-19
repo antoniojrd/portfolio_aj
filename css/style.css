@@ -324,8 +324,17 @@ footer {
 
 /* Ajustes para tablets */
 @media (max-width: 768px) {
-  .contato-container {
+  /*.contato-container {
     flex-direction: column;
+  }
+    */
+  form textarea {
+    width: 100%;
+    max-width: 500px;
+  }
+  form button {
+    width: 100%;
+    max-width: 200px;
   }
 }
 
@@ -373,7 +382,7 @@ footer {
 
   form input,
   form textarea {
-    width: 90%;
+    width: 100%;
   }
 
   form button {
