@@ -110,7 +110,7 @@ nav a:focus {
    SEÇÃO PROJETOS
    =========================== */
 #projetos {
-  background-image: url(/img/projeto00.jpeg);
+  background-image: url(img/projeto00.jpeg);
   background-size: cover;
   background-position: center;
   padding: 4rem 2rem;
