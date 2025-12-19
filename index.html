@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <img src="/img/logo_aj01.jpeg" alt="Logo AJ Feitosa.">
+        <img src="/img/logo_aj01.jpeg" alt="Logo AJ Feitosa." class="imagem-estilizada">
         <button id="menu-toggle" aria-label="Abrir menu">☰</button>
 
         <nav id="menu" aria-label="Menu Principal">
@@ -42,7 +42,7 @@
             </p>
         </section>
     </main>
-    <section>
+    <section id="projetos">
         <h2>Projetos</h2>
         <div class="projetos">
             <article class="card" tabindex="0">
@@ -93,27 +93,32 @@
                 <p>Você pode me enviar um mensagem usando o formulário ao lado.</p>
                 <p>Email: antoniojrfsousa@gmail.com</p>
                 <p>Telefone: (85) 99822-6512</p>
-            </div>
-        </div>
 
-        <form>
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
-
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="logo-contato">
+                    <img src="/img/logo_aj01.jpeg" alt="logoContato" alt="Logo_marca" class="imagem-estilizada">
                 </div>
             </div>
 
-            <div class="form-group">
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-            </div>
 
-            <button type="submit">Enviar</button>
-        </form>
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
 
     <footer>
@@ -124,7 +129,7 @@
                 <img src="/social_Icons_Linkedin/Social Icons_github.svg" alt="Icons_github">
             </a>
             <a href="https://linkedin.com/in/antonio-junior-feitosa-483a3a259" target="_blank" rel="noopener noreferrer"
-                aria-label="GitHub">
+                aria-label="linkedin">
                 <img src="/social_Icons_Linkedin/Social Icons_linkdin.svg" alt="Icons_linkdin">
             </a>
         </div>
