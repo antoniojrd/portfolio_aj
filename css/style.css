@@ -1,0 +1,393 @@
+/* ===========================
+   RESET BÁSICO
+   =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   ESTILO GLOBAL
+   =========================== */
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #124559;
+  color: #f0f0f0;
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #01161E;
+  height: 100px;
+  padding: 0 2rem;
+}
+
+header h1 {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Logo no header */
+.imagem-estilizada {
+  border-radius: 50px;
+  width: 80px;
+  height: auto;
+}
+
+/* ===========================
+   NAVEGAÇÃO
+   =========================== */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+/* Botão hamburguer (mobile) */
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===========================
+   SEÇÃO SOBRE MIM
+   =========================== */
+.bloco-sobre {
+  background-color: #124559;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 50px 0 50px 100px;
+  /* alinhado à esquerda */
+  max-width: 900px;
+  text-align: left;
+}
+
+.bloco-sobre h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.bloco-sobre p {
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* ===========================
+   SEÇÃO PROJETOS
+   =========================== */
+#projetos {
+  background-image: url(/img/projeto00.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+}
+
+#projetos h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.projetos h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #01161E
+}
+
+.projetos p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #124559;
+}
+
+.projetos .resumo {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #124559;
+}
+
+.card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  color: black;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* ===========================
+   SEÇÃO CONTATO
+   =========================== */
+#contato h2 {
+  padding: 2rem;
+}
+
+.contato-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: flex-start;
+}
+
+.contato-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Formulário */
+form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #f0f0f0;
+}
+
+form input,
+form textarea {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  color: #01161E;
+}
+
+form button {
+  width: 15%;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* Logo na seção de contato */
+.logo-contato {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+#logoContato {
+  width: 100px;
+  height: auto;
+  border-radius: 50px;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.social-buttons {
+  margin-top: 10px;
+}
+
+.social-buttons a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-buttons a:hover {
+  color: #0077cc;
+  transform: scale(1.2);
+}
+
+/* ===========================
+   RESPONSIVIDADE
+   =========================== */
+
+/* Menu mobile */
+@media (max-width: 600px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #01161E;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+}
+
+/* Ajustes para tablets */
+@media (max-width: 768px) {
+  .contato-container {
+    flex-direction: column;
+  }
+}
+
+/* Ajustes para celulares pequenos */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10px;
+  }
+
+  .bloco-sobre {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 95%;
+  }
+
+  .contato-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 1rem;
+  }
+
+  .contato-info {
+    text-align: center;
+    flex: unset;
+    min-width: auto;
+  }
+
+  form {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  form input,
+  form textarea {
+    width: 90%;
+  }
+
+  form button {
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  .logo-contato {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  #logoContato {
+    width: 80px;
+    margin: 0 auto;
+  }
+}

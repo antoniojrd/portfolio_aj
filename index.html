@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <img src="/img/logo_aj01.jpeg" alt="Logo AJ Feitosa.">
+        <button id="menu-toggle" aria-label="Abrir menu">☰</button>
+
+        <nav id="menu" aria-label="Menu Principal">
+            <ul>
+                <li><a href="#"></a>Home</li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato"></a>Contato</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="bloco-sobre">
+            <h2>Sobre mim</h2>
+            <p>
+                Sou <strong>aspirante a Desenvolvedor Full Stack</strong> pela <strong>Alpha EdTech</strong>, em
+                constante
+                evolução na área de <strong>tecnologia</strong>.
+                Minha jornada é movida pela <strong>curiosidade</strong>, <strong>disciplina</strong> e
+                <strong>paixão</strong>
+                por criar <strong>soluções digitais</strong> que conectem pessoas e ideias.
+                Tenho interesse em trabalhar tanto no <strong>front-end</strong>, desenvolvendo <strong>interfaces
+                    intuitivas</strong> e <strong>responsivas</strong>, quanto no <strong>back-end</strong>, garantindo
+                a
+                <strong>performance</strong> e <strong>segurança</strong> das aplicações.
+                Busco sempre unir <strong>criatividade</strong> e <strong>lógica</strong> para entregar <strong>projetos
+                    completos</strong> e <strong>funcionais</strong>.
+            </p>
+        </section>
+    </main>
+    <section>
+        <h2>Projetos</h2>
+        <div class="projetos">
+            <article class="card" tabindex="0">
+                <a href="https://antoniojrd.github.io/aula_git/" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/projeto_001.jpg" alt="Imagem do Projeto Aula gitHub">
+                </a>
+                <h3>Aulão Alpha EdTech de Git</h3>
+                <p class="resumo">Domínio das práticas de versionamento com Git e conhecimento na utilização da
+                    linguagem de
+                    marcação Markdown para documentação e formatação de textos.
+                    Readme e utilização do GitHub Pages.
+                </p>
+            </article>
+
+            <article class="card" tabindex="0">
+                <a href="https://antoniojrd.github.io/desafio_alpha/" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/Projeto_02.jpg" alt="Imagem do Projeto desafio Alpha">
+                </a>
+                <h3>Resumo de Redes e Git</h3>
+                <p class="resumo">Resumo dos conteúdos abordados na trilha de Hard Skills da Alpha EdTech, com foco no
+                    desenvolvimento técnico
+                    e prático.
+                </p>
+            </article>
+
+            <article class="card" tabindex="0">
+                <a href="https://antoniojrfsousa.github.io/js-yugioh-assets-main/" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="/img/projeto_03_01.jpg" alt="Imagem Projeto Jogo Yu-gi-Oh pedra-papel-tesoura">
+                </a>
+                <h3>Mini jogo Yu-gi-Oh</h3>
+                <p class="resumo">Este projeto consiste em um jogo de Pedra-Papel-Tesoura ambientado no estilo visual do
+                    anime
+                    Yu-Gi-Oh. A aplicação foi construída utilizando HTML, CSS e JavaScript, explorando conceitos de
+                    lógica de
+                    programação, estilização de interfaces e interatividade no navegador.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2 id="cont">Contato</h2>
+
+        <div class="contato-container">
+            <div class="contato-info">
+                <h3>Fale Conosco</h3>
+                <p>Você pode me enviar um mensagem usando o formulário ao lado.</p>
+                <p>Email: antoniojrfsousa@gmail.com</p>
+                <p>Telefone: (85) 99822-6512</p>
+            </div>
+        </div>
+
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AJ Feitosa. - Todos os direitos reservados</p>
+
+        <div>
+            <a href="https://github.com/antoniojrd" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="/social_Icons_Linkedin/Social Icons_github.svg" alt="Icons_github">
+            </a>
+            <a href="https://linkedin.com/in/antonio-junior-feitosa-483a3a259" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub">
+                <img src="/social_Icons_Linkedin/Social Icons_linkdin.svg" alt="Icons_linkdin">
+            </a>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+
+
+</html>
