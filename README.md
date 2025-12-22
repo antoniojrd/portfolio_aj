@@ -33,4 +33,4 @@ Sou aspirante a Desenvolvedor Full Stack pela Alpha EdTech, movido por curiosida
 
 ---
 
-## Feito por AJ Feitosa
+Feito com 💙 por AJ Feitosa
